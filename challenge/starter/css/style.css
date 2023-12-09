@@ -32,10 +32,13 @@ p {
 
 }
 
-.menu li {
+.menu a {
   display:inline;
   margin: 10px;
   font-weight: bold;
+  text-decoration: none;
+  color: cadetblue;
+
 }
 
 .hero-banner {
