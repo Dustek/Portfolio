@@ -96,6 +96,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position:relative;
 }
 
 .main-image {
@@ -103,20 +104,52 @@ p {
   height: auto; /* Maintain aspect ratio */
 }
 
-.bottom-images {
+
+.lower-images{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 20px; /* Add space between top and bottom images */
+
 }
 
-.bottom-images img {
-  width: 48%; /* Each image takes up 48% of the container width */
-  height: auto;
-  margin: 1%; /* Add a small margin between the images */
+.flex-item {
+  flex: 1 1 calc(50% - 10px);
+  margin-right: 10px;
+  position: relative;
 }
+
+.flex-item img {
+  width: 100%; /* Each image takes up 48% of the container width */
+  height: 75%;
+}
+
 img {
   border: 5px solid #555;
+}
+
+
+/* text inside images */
+
+upper-image .text-block {
+  position: absolute;
+  bottom: 60%;
+  right: 82%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.text-block {
+  position: absolute;
+  bottom: 50%;
+  right: 60%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
