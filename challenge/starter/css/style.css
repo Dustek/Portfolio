@@ -22,6 +22,8 @@ p {
   margin: 0;
 }
 
+/* header and hero */
+
 .menu {
   display:flex;
   justify-content:flex-end;
@@ -36,18 +38,56 @@ p {
   font-weight: bold;
 }
 
+.hero-banner {
 
-.page-wrapper {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  background-image: url("/challenge/starter/images/02-hero-bg.jpg");
+  height: 50vh;
+  background-size: cover;
+
 }
 
-.page-section {
-display:grid;
-grid-template-columns: 1fr 3fr;
+
+.page-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "sidebar1 page-section1"
+  "sidebar2 page-section"
+  "sidebar3 page-section";
+  gap: 10px;
+}
+
+/* main content sections for each sidebar and page section */
+
+
+.sidebar1 {
+  grid-area: sidebar1;
+
+}
+.sidebar2 {
+  grid-area: sidebar2;
+}
+.sidebar3 {
+  grid-area: sidebar3;
+}
+
+.side_styling {
+  border-right: 10px solid #220d80;
+}
+
+.page-section1 {
+  grid-area: page-section1;
+
+}
+.page-section2 {
+  grid-area: page-section2;
+
+}
+.page-section3 {
+  grid-area: page-section3;
+
 }
 
 
