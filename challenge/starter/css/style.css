@@ -11,9 +11,8 @@ body {
 
 
 h1
-h2 {
-  color: cadetblue;
-}
+
+h2,
 h3,
 h4,
 h5,
@@ -28,10 +27,11 @@ p {
 /* header and hero */
 
 .vytautas {
-  color: black;
+  color: #333;
   background-color: cadetblue;
   padding-right: 80px;
-  position:relative;
+  position: relative;
+  text-align: right;
   
 }
 .header {
@@ -42,7 +42,7 @@ p {
 
 .name {
   position: absolute;
-  top: -21px;
+  top: -10px;
   left: 0;
 
 }
@@ -61,15 +61,28 @@ p {
   text-decoration: none;
   color: cadetblue;
   border-bottom-style: solid;
+  font-size:x-large;
 
 }
 
 .hero-banner {
 
-  background-image: url('/challenge/starter/images/forest_face.jpg');
+  background-image: url('forest_face.jpg');
   height: 50vh;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  position:relative;
 
+
+
+}
+
+.hero-banner div {
+  position: absolute;
+  right: 296px;
+  bottom: -25px;
+  color: cadetblue;
+  font-size: larger;
 }
 
 
@@ -99,7 +112,16 @@ p {
 }
 
 .side_styling {
-  border-right: 10px solid #220d80;
+  border-right: 5px solid cadetblue;
+
+}
+
+.side_styling h2 {
+Margin-right: 20px;
+text-align: right;
+font-size: 30px;
+color: cadetblue;
+
 }
 
 .page-section1 {
@@ -131,7 +153,7 @@ upper-image .flex-item
 
 
 upper-image {
-  position:relative;
+  position: relative;
   max-width: 100%;
   max-height: 30%;
 }
@@ -163,7 +185,7 @@ upper-image {
 }
 
 img {
-  border: 5px solid #555;
+  border: 3px solid cadetblue
 }
 
 
@@ -176,7 +198,7 @@ img {
       top: 50%;
       left: 8%;
       transform: translate(-50%, -50%);
-      background-color: rgb(0, 255, 200);
+      background-color: cadetblue;
       padding: 20px;
       text-align: center;
 }
@@ -200,7 +222,7 @@ upper-image img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 17, 255, 0.397); 
+  background-color: rgba(95, 158, 160, 0.356); 
   transition: background-color 0.3s ease;
 }
 
@@ -214,7 +236,7 @@ upper-image img {
 
 
 #about {
-  border: 5px solid #333;
+  
 }
 
 #contact ul {
@@ -225,7 +247,10 @@ upper-image img {
 }
 
 #contact ul li {
-  border-bottom: 3px solid #220d80;
+  border-bottom: 3px solid cadetblue;
+  color:#333;
+  font-size: x-large;
+
 
 }
 
