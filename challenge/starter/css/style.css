@@ -9,8 +9,11 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
+
+h1
+h2 {
+  color: cadetblue;
+}
 h3,
 h4,
 h5,
@@ -24,11 +27,30 @@ p {
 
 /* header and hero */
 
+.vytautas {
+  color: black;
+  background-color: cadetblue;
+  padding-right: 80px;
+  position:relative;
+  
+}
+.header {
+  background-color: #333;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.name {
+  position: absolute;
+  top: -21px;
+  left: 0;
+
+}
+
 .menu {
   display:flex;
   justify-content: flex-end;
   color:cadetblue;
-  border-bottom-style: solid;
 
 }
 
@@ -38,12 +60,13 @@ p {
   font-weight: bold;
   text-decoration: none;
   color: cadetblue;
+  border-bottom-style: solid;
 
 }
 
 .hero-banner {
 
-  background-image: url("/challenge/starter/images/02-hero-bg.jpg");
+  background-image: url('/challenge/starter/images/forest_face.jpg');
   height: 50vh;
   background-size: cover;
 
