@@ -3,15 +3,13 @@
 }
 
 body {
-  margin: 20;
+  margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-
-h1
-
+h1,
 h2,
 h3,
 h4,
@@ -42,15 +40,13 @@ p {
 
 .name {
   position: absolute;
-  top: -10px;
-  left: 0;
-
 }
 
 .menu {
   display:flex;
   justify-content: flex-end;
   color:cadetblue;
+  margin: 0;
 
 }
 
@@ -72,9 +68,7 @@ p {
   background-size: contain;
   background-position: center;
   position:relative;
-
-
-
+  margin-bottom: 35px;
 }
 
 .hero-banner div {
@@ -84,7 +78,6 @@ p {
   color: cadetblue;
   font-size: larger;
 }
-
 
 .page-wrapper {
   display: grid;
@@ -113,7 +106,6 @@ p {
 
 .side_styling {
   border-right: 5px solid cadetblue;
-
 }
 
 .side_styling h2 {
@@ -195,9 +187,7 @@ img {
 
 .text-block {
       position: absolute;
-      top: 50%;
-      left: 8%;
-      transform: translate(-50%, -50%);
+      transform: translate(0%, -185%);
       background-color: cadetblue;
       padding: 20px;
       text-align: center;
@@ -254,3 +244,40 @@ upper-image img {
 
 }
 
+
+@media (max-width: 768px) {
+.hero-banner {
+    width: 150%;
+     }
+  .name {
+      position: relative;
+    }
+    .page-wrapper {
+      display:contents;
+    }
+  /*    margin:auto;
+      grid-gap: 10px;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+          "sidebar1 page-section1"
+          "sidebar2 page-section2"
+          "sidebar3 page-section3";
+      gap: 10px; 
+   */
+.side-styling {
+    border-bottom: 5px solid cadetblue;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .hero-banner {
+    width: 190%;
+  }
+}
