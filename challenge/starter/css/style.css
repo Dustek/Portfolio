@@ -36,6 +36,7 @@ p {
   background-color: #333;
   position: relative;
   padding-bottom: 7px;
+  width: 105%;
 }
 
 .name {
@@ -248,18 +249,10 @@ img {
 
 }
 
-@media (max-width: 1100px){
-  #contact ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 .hero-banner {
-    width: 100%;
+    width: 105%;
      }
   .name {
       position: relative;
