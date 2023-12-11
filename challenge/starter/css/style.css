@@ -65,8 +65,9 @@ p {
 
   background-image: url('forest_face.jpg');
   height: 50vh;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   position:relative;
   margin-bottom: 35px;
 }
@@ -74,7 +75,7 @@ p {
 .hero-banner div {
   position: absolute;
   right: 296px;
-  bottom: -25px;
+  bottom: 0px;
   color: cadetblue;
   font-size: larger;
 }
@@ -82,13 +83,13 @@ p {
 .page-wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns:200px, 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
   "sidebar1 page-section1"
   "sidebar2 page-section2"
   "sidebar3 page-section3";
-  gap: 10px;
+ 
 }
 
 /* main content sections for each sidebar and page section */
@@ -109,7 +110,7 @@ p {
 }
 
 .side_styling h2 {
-Margin-right: 20px;
+margin-right: 20px;
 text-align: right;
 font-size: 30px;
 color: cadetblue;
@@ -247,31 +248,29 @@ upper-image img {
 
 @media (max-width: 768px) {
 .hero-banner {
-    width: 150%;
+    width: 100%;
      }
   .name {
       position: relative;
     }
     .page-wrapper {
-      display:contents;
-    }
-  /*    margin:auto;
-      grid-gap: 10px;
-      grid-template-columns: 200px 1fr;
-      grid-template-rows: auto auto auto;
+      width:100vw;
+      grid-template-columns:1fr ;
       grid-template-areas:
-          "sidebar1 page-section1"
-          "sidebar2 page-section2"
-          "sidebar3 page-section3";
-      gap: 10px; 
-   */
-.side-styling {
+          "sidebar1 " 
+          "page-section1"
+          "sidebar2 "
+           "page-section"
+          "sidebar3 "
+           "page-section3 ";
+     
+    }
+   
+.side_styling {
     border-bottom: 5px solid cadetblue;
+    border-right: none;
   }
 }
-
-
-
 
 
 
