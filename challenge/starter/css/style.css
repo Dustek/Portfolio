@@ -83,12 +83,13 @@ p {
 .page-wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns:200px, 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
   "sidebar1 page-section1"
   "sidebar2 page-section2"
   "sidebar3 page-section3";
+  margin: 70px;
  
 }
 
@@ -105,14 +106,15 @@ p {
   grid-area: sidebar3;
 }
 
-.side_styling {
-  border-right: 5px solid cadetblue;
+.side-styling {
+  border-right: 3px solid cadetblue;
+
 }
 
-.side_styling h2 {
+.side-styling h2 {
 margin-right: 20px;
 text-align: right;
-font-size: 30px;
+font-size: 50px;
 color: cadetblue;
 
 }
@@ -147,7 +149,7 @@ upper-image .flex-item
 
 upper-image {
   position: relative;
-  max-width: 100%;
+  max-width: 75%;
   max-height: 30%;
 }
 
@@ -161,12 +163,14 @@ upper-image {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 76%;
+  margin-top: 30px;
+
 }
 
 .flex-item {
   flex: 1 1 calc(50% - 10px);
   margin-right: 10px;
-  margin-top: 30px;
   position: relative;
   box-sizing: border-box; /* Include padding and border in total width and height */
 }
@@ -177,6 +181,10 @@ upper-image {
   display: block; /* Remove extra space beneath inline elements */
 }
 
+.lower-images .flex-item img {
+  width: 100%;
+  height: 80%;
+}
 img {
   border: 3px solid cadetblue
 }
@@ -188,22 +196,11 @@ img {
 
 .text-block {
       position: absolute;
-      transform: translate(0%, -185%);
+      transform: translate(0%, -140%);
       background-color: cadetblue;
       padding: 20px;
       text-align: center;
 }
-
-
-
-upper-image img {
-  width: 100%;
-  height: 40%;
-  display: block;
-}
-
-
-
 
 /*this controls  images changing when hovered over */
 
@@ -215,6 +212,12 @@ upper-image img {
   height: 100%;
   background-color: rgba(95, 158, 160, 0.356); 
   transition: background-color 0.3s ease;
+}
+
+.lower-images .image-overlay {
+
+  height: 80%;
+
 }
 
 .interactive-image:hover .image-overlay{
@@ -245,6 +248,14 @@ upper-image img {
 
 }
 
+@media (max-width: 1100px){
+  #contact ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
 
 @media (max-width: 768px) {
 .hero-banner {
@@ -260,23 +271,37 @@ upper-image img {
           "sidebar1 " 
           "page-section1"
           "sidebar2 "
-           "page-section"
+           "page-section2"
           "sidebar3 "
            "page-section3 ";
+      margin: 20px;
      
     }
-   
-.side_styling {
+.side-styling {
     border-bottom: 5px solid cadetblue;
     border-right: none;
   }
+  .side-styling h2 {
+    text-align: left;
+
+  }
+
+  #contact ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  .text-block {
+    padding: 0;
+
+  }
+
 }
 
 
-
-
 @media (max-width: 480px) {
-  .hero-banner {
-    width: 190%;
-  }
 }
