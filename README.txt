@@ -29,4 +29,4 @@ I would like to give credit to my instructor, Abdul, as well as all the TA's and
 
 ## Link to website:
 
-https://dustek.github.io/Horizen_SEO_Refactor/
+https://dustek.github.io/Portfolio/
